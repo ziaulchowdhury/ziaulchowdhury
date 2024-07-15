@@ -4,98 +4,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Senior Software Engineer Portfolio</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+    <title>Ziaul Chowdhury - Senior Software Engineer Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <style>
         body {
             font-family: 'Roboto', sans-serif;
         }
+
+        header,
+        footer {
+            background: #343a40;
+            color: white;
+        }
+
+        .header-content {
+            padding: 2rem 0;
+        }
+
+        nav a {
+            color: white !important;
+        }
+
         .profile-img {
             border-radius: 50%;
             width: 150px;
             height: 150px;
             margin-bottom: 1rem;
         }
-        header, footer {
-            background: #263238;
-            color: white;
-        }
-        .header-content {
-            padding: 2rem 0;
-        }
-        nav {
-            background: #455a64;
-        }
-        nav a {
-            color: white !important;
-        }
-        .container {
-            max-width: 1200px;
-        }
+
         .section {
             padding: 3rem 0;
         }
-        .expertise-item {
-            padding: 1rem 0;
-        }
-        footer {
-            padding: 1rem 0;
-        }
+
         .contact-info a {
-            color: #0288d1;
+            color: #007bff;
         }
     </style>
 </head>
 
 <body>
-    <header class="center-align">
+    <header class="text-center">
         <div class="header-content">
             <h1>Ziaul Chowdhury</h1>
-            <p>Senior Software Engineer with expertise in Data Science, Machine Learning, AI, and Cybersecurity</p>
+            <p>Senior Software Engineer | Data Science | Machine Learning | AI | Cybersecurity</p>
         </div>
     </header>
 
-    <nav>
-        <div class="nav-wrapper container">
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="#about">About</a></li>
-                <li><a href="#expertise">Expertise</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
     <div class="container">
-        <section id="about" class="section scrollspy">
+        <section id="about" class="section">
             <div class="row">
-                <div class="col s12 center-align">
-                    <img src="./static/ziaul-chowdhury.jpg" alt="Profile Picture" class="profile-img responsive-img">
+                <div class="col-md-12 text-center">
+                    <img src="https://media.licdn.com/dms/image/C4E03AQHpa0FPhmoiGQ/profile-displayphoto-shrink_800_800/0/1516907348582?e=1692230400&v=beta&t=Zu3VrJut24ilA6j1GKtZNGfMiZFL79tVmWzQvCb8EJo" alt="Ziaul Chowdhury" class="profile-img img-fluid">
                 </div>
-                <div class="col s12 center-align">
+                <div class="col-md-12 text-center">
                     <h2>About Me</h2>
-                    <p>Hello! I'm Ziaul Chowdhury, a Senior Software Engineer with extensive experience in Data Science, Machine Learning, AI, and Cybersecurity. I am passionate about developing innovative solutions and improving processes through technology.</p>
+                    <p>I am a Senior Software Engineer specializing in Data Science, Machine Learning, AI, and Cybersecurity. I am passionate about leveraging technology to solve complex problems and drive innovation. With a strong foundation in software engineering principles and extensive experience in various domains, I aim to deliver high-quality solutions that make a significant impact.</p>
                 </div>
             </div>
         </section>
 
-        <section id="expertise" class="section scrollspy">
+        <section id="experience" class="section">
             <div class="row">
-                <div class="col s12">
-                    <h2>Expertise</h2>
-                    <div class="expertise-item"><i class="fas fa-database"></i> Data Science</div>
-                    <div class="expertise-item"><i class="fas fa-robot"></i> Machine Learning</div>
-                    <div class="expertise-item"><i class="fas fa-brain"></i> Artificial Intelligence</div>
-                    <div class="expertise-item"><i class="fas fa-shield-alt"></i> Cybersecurity</div>
+                <div class="col-md-12">
+                    <h2>Experience</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <h5>Senior Software Engineer</h5>
+                            <p><em>Company Name</em></p>
+                            <p>Jan 2021 - Present</p>
+                            <p>Leading the development of machine learning models and AI solutions to improve business processes and outcomes. Overseeing cybersecurity measures to protect sensitive data and ensure compliance with industry standards.</p>
+                        </li>
+                        <li class="list-group-item">
+                            <h5>Software Engineer</h5>
+                            <p><em>Company Name</em></p>
+                            <p>Jan 2018 - Dec 2020</p>
+                            <p>Developed and implemented data science solutions to analyze large datasets and extract meaningful insights. Collaborated with cross-functional teams to integrate AI technologies into existing systems.</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="section scrollspy">
+        <section id="projects" class="section">
             <div class="row">
-                <div class="col s12 center-align">
+                <div class="col-md-12">
+                    <h2>Projects</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item"><strong>Project 1:</strong> Developed a predictive analytics tool to forecast sales and optimize inventory management.</li>
+                        <li class="list-group-item"><strong>Project 2:</strong> Created a machine learning model to detect fraudulent transactions in real-time, reducing financial losses.</li>
+                        <li class="list-group-item"><strong>Project 3:</strong> Implemented a cybersecurity framework to enhance data protection and compliance with regulatory requirements.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="row">
+                <div class="col-md-12 text-center">
                     <h2>Contact</h2>
                     <p>You can reach me at:</p>
                     <div class="contact-info">
@@ -107,16 +130,13 @@
         </section>
     </div>
 
-    <footer class="center-align">
+    <footer class="text-center">
         <p>&copy; 2024 Ziaul Chowdhury. All rights reserved.</p>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            M.AutoInit();
-        });
-    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
