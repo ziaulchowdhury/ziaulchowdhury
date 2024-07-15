@@ -5,20 +5,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Senior Software Engineer Portfolio</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .profile-img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-bottom: 1rem;
+        }
+        header, footer {
+            background: #263238;
+            color: white;
+        }
+        .header-content {
+            padding: 2rem 0;
+        }
+        nav {
+            background: #455a64;
+        }
+        nav a {
+            color: white !important;
+        }
+        .container {
+            max-width: 1200px;
+        }
+        .section {
+            padding: 3rem 0;
+        }
+        .expertise-item {
+            padding: 1rem 0;
+        }
+        footer {
+            padding: 1rem 0;
+        }
+        .contact-info a {
+            color: #0288d1;
+        }
+    </style>
 </head>
 
 <body>
-
-    <header class="blue-grey darken-4 white-text center-align">
-        <h1>Senior Software Engineer Portfolio</h1>
+    <header class="center-align">
+        <div class="header-content">
+            <h1>Ziaul Chowdhury</h1>
+            <p>Senior Software Engineer with expertise in Data Science, Machine Learning, AI, and Cybersecurity</p>
+        </div>
     </header>
 
-    <nav class="blue-grey darken-2">
+    <nav>
         <div class="nav-wrapper container">
-            <a href="#about" class="brand-logo">About</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#about">About</a></li>
                 <li><a href="#expertise">Expertise</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -30,9 +72,11 @@
         <section id="about" class="section scrollspy">
             <div class="row">
                 <div class="col s12 center-align">
-                    <img src="./static/ziaul-chowdhury.jpg" alt="Profile Picture" class="circle responsive-img" style="width: 150px; height: 150px;">
-                    <h2>Ziaul Chowdhury</h2>
-                    <p>Senior Software Engineer with expertise in Data Science, Machine Learning, AI, and Cybersecurity</p>
+                    <img src="./static/ziaul-chowdhury.jpg" alt="Profile Picture" class="profile-img responsive-img">
+                </div>
+                <div class="col s12 center-align">
+                    <h2>About Me</h2>
+                    <p>Hello! I'm Ziaul Chowdhury, a Senior Software Engineer with extensive experience in Data Science, Machine Learning, AI, and Cybersecurity. I am passionate about developing innovative solutions and improving processes through technology.</p>
                 </div>
             </div>
         </section>
@@ -41,12 +85,10 @@
             <div class="row">
                 <div class="col s12">
                     <h2>Expertise</h2>
-                    <ul class="collection">
-                        <li class="collection-item">Data Science</li>
-                        <li class="collection-item">Machine Learning</li>
-                        <li class="collection-item">Artificial Intelligence</li>
-                        <li class="collection-item">Cybersecurity</li>
-                    </ul>
+                    <div class="expertise-item"><i class="fas fa-database"></i> Data Science</div>
+                    <div class="expertise-item"><i class="fas fa-robot"></i> Machine Learning</div>
+                    <div class="expertise-item"><i class="fas fa-brain"></i> Artificial Intelligence</div>
+                    <div class="expertise-item"><i class="fas fa-shield-alt"></i> Cybersecurity</div>
                 </div>
             </div>
         </section>
@@ -55,7 +97,6 @@
             <div class="row">
                 <div class="col s12">
                     <h2>Projects</h2>
-                    <p>Here are some of the projects I've worked on:</p>
                     <ul class="collection">
                         <li class="collection-item"><strong>Project 1:</strong> Description of project 1.</li>
                         <li class="collection-item"><strong>Project 2:</strong> Description of project 2.</li>
@@ -67,32 +108,28 @@
 
         <section id="contact" class="section scrollspy">
             <div class="row">
-                <div class="col s12">
+                <div class="col s12 center-align">
                     <h2>Contact</h2>
                     <p>You can reach me at:</p>
-                    <p>LinkedIn: <a href="https://www.linkedin.com/in/ziaul-chowdhury-8b637b14/" target="_blank">LinkedIn</a></p>
-                    <p>GitHub: <a href="https://github.com/ziaulchowdhury" target="_blank">GitHub</a></p>
+                    <div class="contact-info">
+                        <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/ziaul-chowdhury-8b637b14/" target="_blank">LinkedIn</a></p>
+                        <p><i class="fab fa-github"></i> <a href="https://github.com/ziaulchowdhury" target="_blank">GitHub</a></p>
+                    </div>
                 </div>
             </div>
         </section>
     </div>
 
-    <footer class="page-footer blue-grey darken-4">
-        <div class="footer-copyright">
-            <div class="container center-align">
-                &copy; 2024 Ziaul Chowdhury. All rights reserved.
-            </div>
-        </div>
+    <footer class="center-align">
+        <p>&copy; 2024 Ziaul Chowdhury. All rights reserved.</p>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            var elems = document.querySelectorAll('.scrollspy');
-            var instances = M.ScrollSpy.init(elems);
+            M.AutoInit();
         });
     </script>
-
 </body>
 
 </html>
